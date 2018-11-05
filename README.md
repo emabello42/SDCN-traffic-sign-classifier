@@ -81,23 +81,32 @@ Here is an exploratory visualization of the training, validation and test data s
 As a first step, I decided to convert the images (in the training, validation and test set) to grayscale because the training process turns out to be faster than using color information while the accuracy is better. After that, a  normalization process is applied, which consists in the following operation: image_data-128/128, which changes the range of values from [0,255] to [-1, 1).
 
 Here is an example of a traffic sign image before and after grayscaling:
+
 ![alt text][image2]
 ![alt text][image3]
 
 And after normalization:
+
 ![alt text][image4]
 
 In order to reduce the overfitting in the model, the training set was augmented applying different kinds of transformations to the original images: translation, scaling, rotation and changes in the brightness. The transformations and their parameters were selected randomly with values within the following ranges:
 * Translation:
 	* Displacement along the x axis, **fx**:  [-2, 2]
 	* Displacement along the y axis, **fy**: [-2, 2]
-		![alt text][image6]
-* Rotation in the range [-35°, 35°]  
-		![alt text][image5]
+	
+	![alt text][image6]
+		
+* Rotation in the range [-35°, 35°]
+
+	![alt text][image5]
+		
 * Scaling between [0.9, 1.1] of the original size
-		![alt text][image7]
+
+	![alt text][image7]
+		
 * Changes in brightness between [-100, 100]
-		![alt text][image8]
+
+	![alt text][image8]
 
 On the other hand, the number of samples for each traffic sign class is balanced, applying the transformations at random until reaching the same amount of samples in each class (6030, which is three times the number of samples in the class with more samples in the original training set). The distribution of samples in the augmented training set is as follows:
 ![alt text][image9]
