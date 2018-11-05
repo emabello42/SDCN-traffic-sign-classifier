@@ -34,11 +34,11 @@ The lab environment can be created with CarND Term1 Starter Kit. Click [here](ht
 [image7]: ./examples/scale_img.png "Scaling"
 [image8]: ./examples/chbrightness_img.png "Change in Brightness"
 [image9]: ./examples/visualization_ext.png "Visualization Augmented training set"
-[image10]: ./test_images/00764.ppm "Traffic Sign 1"
-[image11]: ./test_images/00806.ppm "Traffic Sign 2"
-[image12]: ./test_images/00781.ppm "Traffic Sign 3"
-[image13]: ./test_images/01010.ppm "Traffic Sign 4"
-[image14]: ./test_images/00450.ppm "Traffic Sign 5"
+[image10]: ./test_images/00764.png "Traffic Sign 1"
+[image11]: ./test_images/00806.png "Traffic Sign 2"
+[image12]: ./test_images/00781.png "Traffic Sign 3"
+[image13]: ./test_images/01010.png "Traffic Sign 4"
+[image14]: ./test_images/00450.png "Traffic Sign 5"
 
 [image15]: ./examples/traffic_sign_featuremap1.png "Example 1 - Feature map 1"
 [image16]: ./examples/traffic_sign_featuremap2.png "Example 1 - Feature map 2"
@@ -188,13 +188,13 @@ These images present some difficulties to be correctly classified:
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
+| Image			|     Prediction	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| Priority road     	| Priority road   								| 
-| Traffic signals     	| Wild animals crossing 						|
-| Keep left				| Keep left										|
-| Speed limit 120 km/h	| Speed limit 120 km/h					 		|
-| No passing			| No passing      								|
+| Priority road     	| Priority road   				| 
+| Traffic signals     	| Wild animals crossing 			|
+| Keep left		| Keep left					|
+| Speed limit 120 km/h	| Speed limit 120 km/h				|
+| No passing		| No passing      				|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 94.7%.
@@ -208,50 +208,54 @@ For the first image, the model is 100% sure that this is a *Priority road* sign 
 
 For the second image, the model is 23.71% sure that is this is a *Wild animals crossing* sign, but actually it contains a *traffic signal*.The top five soft max probabilities were:
 
-| Probability         	|     Prediction	        					| 
+| Probability         	|     Prediction	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| .2371         		| Wild animals crossing  						| 
-| .2025     			| Keep left 									|
-| .1687					| Traffic signals								|
-| .1308	      			| Dangerous curve to the right					|
-| .0974				    | Road work     								|
+| .2371         	| Wild animals crossing  			| 
+| .2025     		| Keep left 					|
+| .1687			| Traffic signals				|
+| .1308	      		| Dangerous curve to the right			|
+| .0974			| Road work     				|
 
-For the third image, the model is 99.93% sure that is this is a *Keep left* sign, and it does contain a **Keep left* sign. The top five soft max probabilities were
-| Probability         	|     Prediction	        					| 
+For the third image, the model is 99.93% sure that is this is a *Keep left* sign, and it does contain a *Keep left* sign. The top five soft max probabilities were
+| Probability         	|     Prediction	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| .9993         		| Keep left  									| 
-| .0005     			| Stop 											|
-| .0001					| Wild animals crossing 						|
-| .0000	      			| Vehicles over 3.5 metric tons prohibited		|
-| .0000				    | Speed limit 70km/h    						|
+| .9993         	| Keep left  					| 
+| .0005     		| Stop 						|
+| .0001			| Wild animals crossing 			|
+| .0000	      		| Vehicles over 3.5 metric tons prohibited	|
+| .0000			| Speed limit 70km/h    			|
 
 For the fourth image, the model is 100% sure that this is a *Speed limit 120 km/h* sign (probability of 1) and it does contain that.
 
-For the fifth image, the model is 90.21% sure that is this is a *No passing* sign, and it does contain a **No passing* sign. The top five soft max probabilities were
-| Probability         	|     Prediction	        					| 
+For the fifth image, the model is 90.21% sure that is this is a *No passing* sign, and it does contain a *No passing* sign. The top five soft max probabilities were
+| Probability         	|     Prediction	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| .9021         		| No passing  									| 
-| .0639     			| No passing for vehicles over 3.5 metric tons	|
-| .0155					| Vehicles over 3.5 metric tons prohibited 		|
-| .0092	      			| End of no passing								|
-| .0058				    | End of all speed and passing limits			|
+| .9021         	| No passing  					| 
+| .0639     		| No passing for vehicles over 3.5 metric tons	|
+| .0155			| Vehicles over 3.5 metric tons prohibited 	|
+| .0092	      		| End of no passing				|
+| .0058			| End of all speed and passing limits		|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 The following  images show the RELU activations after the two convolutional layers when the input image is a traffic sign (Speed limit 80km/h):
 Input image:
+
 ![alt text][image2]
 
 Activations:
+
 ![alt text][image15]
 ![alt text][image16]
 
 The next images show the same corresponding activations, but when the input image does not contain a traffic sign:
 Input image:
+
 ![alt text][image19]
 
 Activations:
+
 ![alt text][image17]
 ![alt text][image18]
 
