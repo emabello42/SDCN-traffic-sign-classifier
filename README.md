@@ -204,22 +204,23 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 16th cell of the IPython notebook.
 
-For the first image, the model is 100% sure that this is a *Priority road* sign (probability of 1) and it does contain that.
+For the first image, the model is 100% sure that it is a *Priority road* sign (probability of 1) and it does contain that.
 
-For the second image, the model is 23.71% sure that is this is a *Wild animals crossing* sign, but actually it contains a *traffic signal*.The top five soft max probabilities were:
+For the second image, the model is 23.71% sure that it is a *Wild animals crossing* sign, but actually it contains a *traffic signal*.The top five softmax probabilities were:
 
-| Probability         	|     Prediction	        		| 
-|:---------------------:|:---------------------------------------------:| 
-| .2371         	| Wild animals crossing  			| 
+| Probability         	|     Prediction	        		|
+|:---------------------:|:---------------------------------------------:|
+| .2371         	| Wild animals crossing  			|
 | .2025     		| Keep left 					|
 | .1687			| Traffic signals				|
 | .1308	      		| Dangerous curve to the right			|
 | .0974			| Road work     				|
 
-For the third image, the model is 99.93% sure that is this is a *Keep left* sign, and it does contain a *Keep left* sign. The top five soft max probabilities were
-| Probability         	|     Prediction	        		| 
-|:---------------------:|:---------------------------------------------:| 
-| .9993         	| Keep left  					| 
+For the third image, the model is 99.93% sure that is it is a *Keep left* sign, and it does contain a *Keep left* sign. The top five softmax probabilities were:
+
+| Probability         	|     Prediction	        		|
+|:---------------------:|:---------------------------------------------:|
+| .9993         	| Keep left  					|
 | .0005     		| Stop 						|
 | .0001			| Wild animals crossing 			|
 | .0000	      		| Vehicles over 3.5 metric tons prohibited	|
@@ -227,10 +228,11 @@ For the third image, the model is 99.93% sure that is this is a *Keep left* sign
 
 For the fourth image, the model is 100% sure that this is a *Speed limit 120 km/h* sign (probability of 1) and it does contain that.
 
-For the fifth image, the model is 90.21% sure that is this is a *No passing* sign, and it does contain a *No passing* sign. The top five soft max probabilities were
-| Probability         	|     Prediction	        		| 
-|:---------------------:|:---------------------------------------------:| 
-| .9021         	| No passing  					| 
+For the fifth image, the model is 90.21% sure that is this is a *No passing* sign, and it does contain a *No passing* sign. The top five soft max probabilities were:
+
+| Probability         	|     Prediction	        		|
+|:---------------------:|:---------------------------------------------:|
+| .9021         	| No passing  					|
 | .0639     		| No passing for vehicles over 3.5 metric tons	|
 | .0155			| Vehicles over 3.5 metric tons prohibited 	|
 | .0092	      		| End of no passing				|
