@@ -108,21 +108,21 @@ While the original training set has  34799 samples, the augmented one has 259290
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
+| Layer         	|     Description	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x1 Grayscale image   					| 
+| Input         	| 32x32x1 Grayscale image   			| 
 | Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
-| RELU					|												|
+| RELU			|						|
 | Max pooling	      	| 2x2 stride, 2x2 kernel size, outputs 14x14x6 	|
-| Convolution 5x5	    | 1x1 stride, valid padding, outputs 10x10x16   |
-| RELU					|												|
+| Convolution 5x5	| 1x1 stride, valid padding, outputs 10x10x16   |
+| RELU			|						|
 | Max pooling	      	| 2x2 stride, 2x2 kernel size, outputs 5x5x16 	|
-| Fully connected	1	| outputs 120        							|
-| Dropout				| outputs 120        							|
-| Fully connected	2	| outputs 84        							|
-| Dropout				| outputs 84        							|
-| Fully connected	3	| outputs 43        							|
-| Softmax				| outputs 43        							|
+| Fully connected 1	| outputs 120        				|
+| Dropout		| outputs 120        				|
+| Fully connected 2	| outputs 84        				|
+| Dropout		| outputs 84        				|
+| Fully connected 3	| outputs 43        				|
+| Softmax		| outputs 43        				|
  
 
 
